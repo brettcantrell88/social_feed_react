@@ -4,10 +4,14 @@ import Post from './Components/AddPost/Post';
 
 function App() {
   const [entries, setEntries] = useState([{name: "Brett", post: "Sup"}, {name: "Mike", post: "Dude"}])
+  function addNewPost(entry){
+    let tempPosts = [entry, ...entries];
+    setEntries(tempPosts);
+  }
   return (
     <div>
       <DisplayPosts parentPost={entries} />
-      <Post />
+      <Post addNewPostProp={addNewPost}/>
 
     </div>
   )

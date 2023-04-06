@@ -11,6 +11,7 @@ const Post = (props) => {
             name: name,
             post: post
         };
+        props.addNewPostProp(newPost)
     }
     return ( 
         <form onSubmit={handleSubmit}>
@@ -25,6 +26,7 @@ const Post = (props) => {
  
 export default Post;
 
-// import post into deisplay post call it inside mapping then pass in the entry props.entry index +1 will have error to figure out
+// import post into display post, call it inside mapping then pass in the entry props.entry index +1 will 
+// have error to figure out
 // like and dislike button will need to be on post component, need conditional rendering then need 2 functions
-// that change two state vars for this conditional rendering
+// that change two state variables for this conditional rendering
