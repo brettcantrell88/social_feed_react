@@ -14,7 +14,7 @@ const Post = (props) => {
   }
   return (
     <form onSubmit={(event) => handleSubmit(event)} className="form-grid">
-      <div className="form-group">
+      <div className="form-group" style={{"display": "flex", "alignItems": "center"}}>
         <label>Name</label>
         <input
           type="text"
@@ -23,7 +23,7 @@ const Post = (props) => {
           onChange={(event) => setName(event.target.value)}
         />
       </div>
-      <div className="form-group">
+      <div className="form-group" style={{"display": "flex", "alignItems": "center"}}>
         <label>Post</label>
         <input
           type="text"
