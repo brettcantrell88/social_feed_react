@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Post.css";
 
+
 const Post = (props) => {
   const [name, setName] = useState("");
   const [post, setPost] = useState("");
@@ -11,10 +12,14 @@ const Post = (props) => {
       post: post,
     };
     props.addNewPostProp(newPost);
+    setName('');
   }
   return (
     <form onSubmit={(event) => handleSubmit(event)} className="form-grid">
-      <div className="form-group" style={{"display": "flex", "alignItems": "center"}}>
+      <div
+        className="form-group"
+        style={{ display: "flex", alignItems: "center" }}
+      >
         <label>Name</label>
         <input
           type="text"
@@ -23,7 +28,10 @@ const Post = (props) => {
           onChange={(event) => setName(event.target.value)}
         />
       </div>
-      <div className="form-group" style={{"display": "flex", "alignItems": "center"}}>
+      <div
+        className="form-group"
+        style={{ display: "flex", alignItems: "center" }}
+      >
         <label>Post</label>
         <input
           type="text"
@@ -38,6 +46,7 @@ const Post = (props) => {
         style={{ "margin-top": "1em", marginLeft: "1em" }}
       >
         Post
+       
       </button>
     </form>
   );

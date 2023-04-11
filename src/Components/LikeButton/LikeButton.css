@@ -1,20 +1,18 @@
 button {
-    color: gray;
-    text-align: center;
-    padding: 15px;
-    display: inline-block;
-    border-radius: 50%;
+  text-align: center;
+  padding: 15px;
 
+  border-radius: 50%;
 }
 
-.active-like{
-    background-color: green;
+.active-like {
+  background-color: green;
 }
 
-.active-dislike{
-    background-color: red;
+.active-dislike {
+  background-color: red;
 }
 
-.inactive{
-    background-color: grey;
+.inactive {
+  background-color: grey;
 }

@@ -1,4 +1,5 @@
 import "./DisplayPosts.css";
+import LikeButton from "./Components/LikeButton/LikeButton";
 
 const DisplayPosts = (props) => {
   return (
@@ -8,6 +9,7 @@ const DisplayPosts = (props) => {
           <div>
             <p>{entry.name}</p>
             <p>{entry.post}</p>
+            <LikeButton />
           </div>
         );
       })}

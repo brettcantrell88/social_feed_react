@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import DisplayPosts from "./Components/DisplayPosts/DisplayPosts";
 import Post from "./Components/AddPost/Post";
-import "./App.css";
 import NavBar from "./Components/NavBar/NavBar";
-import LikeButton from "./Components/LikeButton/LikeButton";
+import "./App.css";
+
 
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
           <div className="col-md-6">
             <div className="border-box">
               <DisplayPosts parentPost={entries} />
-              <div><LikeButton /></div>
+              
             </div>
           </div>
         </div>

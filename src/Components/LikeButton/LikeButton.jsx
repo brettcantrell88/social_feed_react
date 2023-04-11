@@ -1,19 +1,21 @@
 import React, { useState } from "react";
 import "./LikeButton.css";
+import ThumbUpIcon from '@mui/icons-material/ThumbUp';
+
 
 const LikeButton = (props) => {
-  const [buttonClass, setButtonClass] = useState("inactive");
+  const [like, setLike] = useState("inactive");
 
   function handleLike() {
-    if (buttonClass === "inactive") {
-      setButtonClass("active");
+    if (like === "inactive") {
+      setLike("active");
     } else {
-      setButtonClass("inactive");
+      setLike("inactive");
     }
   };
   return (
     <div>
-      <button className={buttonClass} onClick={handleLike}>
+      <button className={buttonClass} onClick={handleLike} style={ThumbUpIcon}>
         {props.message}
       </button>
     </div>
