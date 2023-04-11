@@ -1,0 +1,10 @@
+.DisLikeButton {
+    align-items: right;
+    padding: 15px;
+    border-radius: 50%;
+    display: flex;
+  }
+
+.active-dislike {
+    background-color: red;
+  }

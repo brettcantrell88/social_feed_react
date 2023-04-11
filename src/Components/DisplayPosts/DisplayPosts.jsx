@@ -1,5 +1,6 @@
 import "./DisplayPosts.css";
 import LikeButton from "../LikeButton/LikeButton";
+import DisLikeButton from "../LikeButton/DisLikeButton";
 
 
 const DisplayPosts = (props) => {
@@ -11,6 +12,7 @@ const DisplayPosts = (props) => {
             <p>{entry.name}</p>
             <p>{entry.post}</p>
             <LikeButton />
+            <DisLikeButton />
           </div>
         );
       })}
