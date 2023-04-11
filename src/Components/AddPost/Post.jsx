@@ -43,7 +43,7 @@ const Post = (props) => {
       <button
         type="submit"
         className="btn btn-primary"
-        style={{ "margin-top": "1em", marginLeft: "1em" }}
+        style={{ "marginTop": "1em", marginLeft: "1em" }}
       >
         Post
        

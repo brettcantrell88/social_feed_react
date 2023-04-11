@@ -1,5 +1,6 @@
 import "./DisplayPosts.css";
-import LikeButton from "./Components/LikeButton/LikeButton";
+import LikeButton from "../LikeButton/LikeButton";
+
 
 const DisplayPosts = (props) => {
   return (
